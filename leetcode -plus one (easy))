@@ -1,0 +1,33 @@
+#include<iostream>
+#define size 123
+int main(){
+    int array[size]; int num2[size];
+    std::cout<<"\n enter the size for inputting numbers: ";
+    int num;
+    std::cin>> num;
+     
+     std::cout<<"\n asks user to take input from user: ";
+     
+    for(int i=0; i<=num; i++){
+    std::cin>> array[i];}
+    
+    printf("\n");
+    
+    for(int i=0; i<=num; i++){     //increments the large index. 
+     if( i == num ){
+         num2[i]= ++array[i];
+         
+     }
+     else{
+          num2[i]= array[i];
+     }
+    }
+        //to display.
+        
+        for(int i=0; i<=num; i++){
+            if(std::cout<<num2[i] <<'\n'){}
+        }
+
+
+
+}
