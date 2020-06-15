@@ -1,0 +1,104 @@
+#include<iostream>
+#define size 23
+//ask user to roll a dice form 1 ,2 ,3,4 ,5,6.
+//then displays the value.
+int main(){
+
+std::cout<<"hey user, roll the dice: ";
+int dice; int roll_dice;
+std::cin>> dice;
+ srand(time(NULL));
+
+    if(dice <= 6){
+    switch(dice){
+        case 1:
+             roll_dice=(rand()%6);
+            if(roll_dice!=0){
+            std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            break;
+        
+        case 2:
+         roll_dice=(rand()%6);
+            if(roll_dice!=0){
+            std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            
+            break;
+        
+        case 3:
+         roll_dice=(rand()%6);
+            if(roll_dice!=0){
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            break;    
+            
+        case 4:
+          roll_dice=(rand()%6);
+            if(roll_dice!=0){
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            break;
+            
+        case 5:
+          roll_dice=(rand()%6);
+            if(roll_dice!=0){
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            break;
+            
+        case 6:
+         roll_dice=(rand()%6);
+            if(roll_dice!=0){
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;}
+            break;
+}}
+       
+       else{
+           
+       
+        if(dice > 6){
+            std::cout<<"\n dear player your number shouldn't be greater than 6: "<<'\n';
+           
+            std::cout<<"\n dear player do u want to play again: ('n','y') "<<'\n';
+            char choice;
+            std::cin>>choice;
+            if(choice =='y' || choice == 'n'){
+            switch(choice){
+                
+                case 'y':
+                std::cout<<"\n enter value for a dice: "<<'\n';
+                std::cin>>dice;
+                
+                if(dice <= 6){
+    switch(dice){
+        case 1:
+            std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;
+        
+        case 2:
+            std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;
+        
+        case 3:
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;    
+            
+        case 4:
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;
+            
+        case 5:
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;
+            
+        case 6:
+        std::cout<<"\nyour number on dice is: "<<" "<< rand()%6;
+            break;
+            
+    }
+                }
+    case 'n':
+    std::cout<<"\n okay";
+    break;
+}
+            }
+     }
+        }
+    
+}
